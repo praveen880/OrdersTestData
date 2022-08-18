@@ -1,0 +1,11 @@
+first_name,last_name,birthDate,superuser,salutation,academicTitle,email
+Balasubramanium,Sharmila,21.08.1994,false,Mrs.,,info@Shankar-Bose.de
+Mehra,Rajani,20.09.1961,false,Mrs.,,info@Rator.de
+Mukopadhyay,Vikram,14.05.2001,false,Mr.,,info@APK.de
+Malhotra,Tulsi,29.09.1974,false,Mr.,,info@Enventis.de
+Sen,Prajit,25.12.1956,true,Mr.,,info@GXC.de
+Yadav,Sumati,05.03.1963,true,Mrs.,,info@WireBot.de
+Verma,Padmini,31.05.1996,false,Mrs.,,info@JXN.de
+Singh,Adhija,05.01.1963,true,Mrs.,Dr.,info@CBH.de
+Nair,Rati,29.02.1996,false,Mrs.,,info@DynaShop.de
+Sarin,Satish,25.10.1988,false,Mr.,,info@Gopal-Sengupta.de

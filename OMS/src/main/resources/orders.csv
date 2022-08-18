@@ -1,0 +1,8 @@
+orderId,customerName,address,productName,prodId,quantity,paymentType
+1,Verizon,US,Mobile,2233,2,cash
+2,Infinite,Hyderabad,Laptop,6574,2,UPI
+4,Delitte,Hyd,Mobile,35642,5,Cash
+5,HP,Hyd,Laptop,64784,3,UPI
+6,Dell,Bang,Laptop,5678,6,Net
+8,exe,hyd,lP,356,3,cash
+10723,Verizon,US,Mobile,2233,2,cash

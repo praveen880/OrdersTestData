@@ -1,0 +1,92 @@
+[INFO ] 2022-08-17 18:59:57.489 [main] CONFIG - Running file .\ordersScript.xml
+[INFO ] 2022-08-17 18:59:57.489 [main] CONFIG - Running file .\ordersScript.xml
+[INFO ] 2022-08-17 18:59:57.489 [main] CONFIG - Running file .\ordersScript.xml
+[INFO ] 2022-08-17 18:59:57.516 [main] CONFIG - Benerator 2.0.0-jdk-11 build ${build_number}
+[INFO ] 2022-08-17 18:59:57.516 [main] CONFIG - Benerator 2.0.0-jdk-11 build ${build_number}
+[INFO ] 2022-08-17 18:59:57.516 [main] CONFIG - Benerator 2.0.0-jdk-11 build ${build_number}
+[INFO ] 2022-08-17 18:59:57.517 [main] CONFIG - Java version:  11.0.13
+[INFO ] 2022-08-17 18:59:57.517 [main] CONFIG - Java version:  11.0.13
+[INFO ] 2022-08-17 18:59:57.517 [main] CONFIG - Java version:  11.0.13
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - JVM product:   Java HotSpot(TM) 64-Bit Server VM 11.0.13+10-LTS-370 (Oracle Corporation)
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - JVM product:   Java HotSpot(TM) 64-Bit Server VM 11.0.13+10-LTS-370 (Oracle Corporation)
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - JVM product:   Java HotSpot(TM) 64-Bit Server VM 11.0.13+10-LTS-370 (Oracle Corporation)
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - System:        Windows 10 10.0 amd64
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - System:        Windows 10 10.0 amd64
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - System:        Windows 10 10.0 amd64
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - CPU & RAM:     8 cores and 15 GB RAM, max 3 GB of RAM for this process
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - CPU & RAM:     8 cores and 15 GB RAM, max 3 GB of RAM for this process
+[INFO ] 2022-08-17 18:59:57.518 [main] CONFIG - CPU & RAM:     8 cores and 15 GB RAM, max 3 GB of RAM for this process
+[INFO ] 2022-08-17 18:59:57.519 [main] CONFIG - Slf4j binding: org.apache.logging.slf4j.Log4jLoggerFactory
+[INFO ] 2022-08-17 18:59:57.519 [main] CONFIG - Slf4j binding: org.apache.logging.slf4j.Log4jLoggerFactory
+[INFO ] 2022-08-17 18:59:57.519 [main] CONFIG - Slf4j binding: org.apache.logging.slf4j.Log4jLoggerFactory
+[INFO ] 2022-08-17 18:59:57.521 [main] CONFIG - Configured heap size limit: 3946 MB
+[INFO ] 2022-08-17 18:59:57.521 [main] CONFIG - Configured heap size limit: 3946 MB
+[INFO ] 2022-08-17 18:59:57.521 [main] CONFIG - Configured heap size limit: 3946 MB
+[ERROR] 2022-08-17 18:59:58.539 [main] CompanyNameGenerator - Cannot create legal form generator: Unable to create generator for atomic dataset: IN: . Falling back to US. 
+[ERROR] 2022-08-17 18:59:58.539 [main] CompanyNameGenerator - Cannot create legal form generator: Unable to create generator for atomic dataset: IN: . Falling back to US. 
+[ERROR] 2022-08-17 18:59:58.539 [main] CompanyNameGenerator - Cannot create legal form generator: Unable to create generator for atomic dataset: IN: . Falling back to US. 
+[INFO ] 2022-08-17 18:59:58.545 [main] CompanyNameGenerator - Cannot create sector generator: No localization found for /com/rapiddweller/domain/organization/sector.csv on locale hi_IN. Falling back to US
+[INFO ] 2022-08-17 18:59:58.545 [main] CompanyNameGenerator - Cannot create sector generator: No localization found for /com/rapiddweller/domain/organization/sector.csv on locale hi_IN. Falling back to US
+[INFO ] 2022-08-17 18:59:58.545 [main] CompanyNameGenerator - Cannot create sector generator: No localization found for /com/rapiddweller/domain/organization/sector.csv on locale hi_IN. Falling back to US
+[INFO ] 2022-08-17 18:59:58.552 [main] TaskExecutor - Running task StateTrackingTaskProxy[GenerateAndConsumeTask(customer)] 5 times with page size 1 in a single thread
+[INFO ] 2022-08-17 18:59:58.552 [main] TaskExecutor - Running task StateTrackingTaskProxy[GenerateAndConsumeTask(customer)] 5 times with page size 1 in a single thread
+[INFO ] 2022-08-17 18:59:58.618 [main] LoggingConsumer - startConsuming(customer[first_name=Nair, last_name=Gauri, birthDate=27.02.1982, superuser=true, salutation=Mrs., academicTitle=[null], email=info@Illumon.de])
+[INFO ] 2022-08-17 18:59:58.618 [main] LoggingConsumer - startConsuming(customer[first_name=Nair, last_name=Gauri, birthDate=27.02.1982, superuser=true, salutation=Mrs., academicTitle=[null], email=info@Illumon.de])
+[INFO ] 2022-08-17 18:59:58.618 [main] LoggingConsumer - startConsuming(customer[first_name=Nair, last_name=Gauri, birthDate=27.02.1982, superuser=true, salutation=Mrs., academicTitle=[null], email=info@Illumon.de])
+[INFO ] 2022-08-17 18:59:58.622 [main] LoggingConsumer - finishConsuming(customer[first_name=Nair, last_name=Gauri, birthDate=27.02.1982, superuser=true, salutation=Mrs., academicTitle=[null], email=info@Illumon.de])
+[INFO ] 2022-08-17 18:59:58.622 [main] LoggingConsumer - finishConsuming(customer[first_name=Nair, last_name=Gauri, birthDate=27.02.1982, superuser=true, salutation=Mrs., academicTitle=[null], email=info@Illumon.de])
+[INFO ] 2022-08-17 18:59:58.622 [main] LoggingConsumer - finishConsuming(customer[first_name=Nair, last_name=Gauri, birthDate=27.02.1982, superuser=true, salutation=Mrs., academicTitle=[null], email=info@Illumon.de])
+[INFO ] 2022-08-17 18:59:58.623 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.623 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.623 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.629 [main] LoggingConsumer - startConsuming(customer[first_name=Jaiteley, last_name=Harish, birthDate=30.12.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@Shankar-Malhotra.de])
+[INFO ] 2022-08-17 18:59:58.629 [main] LoggingConsumer - startConsuming(customer[first_name=Jaiteley, last_name=Harish, birthDate=30.12.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@Shankar-Malhotra.de])
+[INFO ] 2022-08-17 18:59:58.629 [main] LoggingConsumer - startConsuming(customer[first_name=Jaiteley, last_name=Harish, birthDate=30.12.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@Shankar-Malhotra.de])
+[INFO ] 2022-08-17 18:59:58.629 [main] LoggingConsumer - finishConsuming(customer[first_name=Jaiteley, last_name=Harish, birthDate=30.12.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@Shankar-Malhotra.de])
+[INFO ] 2022-08-17 18:59:58.629 [main] LoggingConsumer - finishConsuming(customer[first_name=Jaiteley, last_name=Harish, birthDate=30.12.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@Shankar-Malhotra.de])
+[INFO ] 2022-08-17 18:59:58.629 [main] LoggingConsumer - finishConsuming(customer[first_name=Jaiteley, last_name=Harish, birthDate=30.12.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@Shankar-Malhotra.de])
+[INFO ] 2022-08-17 18:59:58.630 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.630 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.630 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.632 [main] LoggingConsumer - startConsuming(customer[first_name=Rangarajan, last_name=Kalpana, birthDate=16.10.1995, superuser=false, salutation=Mrs., academicTitle=[null], email=info@YourStation.de])
+[INFO ] 2022-08-17 18:59:58.632 [main] LoggingConsumer - startConsuming(customer[first_name=Rangarajan, last_name=Kalpana, birthDate=16.10.1995, superuser=false, salutation=Mrs., academicTitle=[null], email=info@YourStation.de])
+[INFO ] 2022-08-17 18:59:58.632 [main] LoggingConsumer - startConsuming(customer[first_name=Rangarajan, last_name=Kalpana, birthDate=16.10.1995, superuser=false, salutation=Mrs., academicTitle=[null], email=info@YourStation.de])
+[INFO ] 2022-08-17 18:59:58.633 [main] LoggingConsumer - finishConsuming(customer[first_name=Rangarajan, last_name=Kalpana, birthDate=16.10.1995, superuser=false, salutation=Mrs., academicTitle=[null], email=info@YourStation.de])
+[INFO ] 2022-08-17 18:59:58.633 [main] LoggingConsumer - finishConsuming(customer[first_name=Rangarajan, last_name=Kalpana, birthDate=16.10.1995, superuser=false, salutation=Mrs., academicTitle=[null], email=info@YourStation.de])
+[INFO ] 2022-08-17 18:59:58.633 [main] LoggingConsumer - finishConsuming(customer[first_name=Rangarajan, last_name=Kalpana, birthDate=16.10.1995, superuser=false, salutation=Mrs., academicTitle=[null], email=info@YourStation.de])
+[INFO ] 2022-08-17 18:59:58.633 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.633 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.633 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.634 [main] LoggingConsumer - startConsuming(customer[first_name=Sengupta, last_name=Sumantra, birthDate=25.02.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@DigiDirect.de])
+[INFO ] 2022-08-17 18:59:58.634 [main] LoggingConsumer - startConsuming(customer[first_name=Sengupta, last_name=Sumantra, birthDate=25.02.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@DigiDirect.de])
+[INFO ] 2022-08-17 18:59:58.634 [main] LoggingConsumer - startConsuming(customer[first_name=Sengupta, last_name=Sumantra, birthDate=25.02.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@DigiDirect.de])
+[INFO ] 2022-08-17 18:59:58.635 [main] LoggingConsumer - finishConsuming(customer[first_name=Sengupta, last_name=Sumantra, birthDate=25.02.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@DigiDirect.de])
+[INFO ] 2022-08-17 18:59:58.635 [main] LoggingConsumer - finishConsuming(customer[first_name=Sengupta, last_name=Sumantra, birthDate=25.02.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@DigiDirect.de])
+[INFO ] 2022-08-17 18:59:58.635 [main] LoggingConsumer - finishConsuming(customer[first_name=Sengupta, last_name=Sumantra, birthDate=25.02.1975, superuser=true, salutation=Mr., academicTitle=[null], email=info@DigiDirect.de])
+[INFO ] 2022-08-17 18:59:58.639 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.639 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.639 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.640 [main] LoggingConsumer - startConsuming(customer[first_name=Subramanium, last_name=Sudhir, birthDate=27.11.1971, superuser=true, salutation=Mr., academicTitle=[null], email=info@MyDirect.de])
+[INFO ] 2022-08-17 18:59:58.640 [main] LoggingConsumer - startConsuming(customer[first_name=Subramanium, last_name=Sudhir, birthDate=27.11.1971, superuser=true, salutation=Mr., academicTitle=[null], email=info@MyDirect.de])
+[INFO ] 2022-08-17 18:59:58.640 [main] LoggingConsumer - startConsuming(customer[first_name=Subramanium, last_name=Sudhir, birthDate=27.11.1971, superuser=true, salutation=Mr., academicTitle=[null], email=info@MyDirect.de])
+[INFO ] 2022-08-17 18:59:58.642 [main] LoggingConsumer - finishConsuming(customer[first_name=Subramanium, last_name=Sudhir, birthDate=27.11.1971, superuser=true, salutation=Mr., academicTitle=[null], email=info@MyDirect.de])
+[INFO ] 2022-08-17 18:59:58.642 [main] LoggingConsumer - finishConsuming(customer[first_name=Subramanium, last_name=Sudhir, birthDate=27.11.1971, superuser=true, salutation=Mr., academicTitle=[null], email=info@MyDirect.de])
+[INFO ] 2022-08-17 18:59:58.642 [main] LoggingConsumer - finishConsuming(customer[first_name=Subramanium, last_name=Sudhir, birthDate=27.11.1971, superuser=true, salutation=Mr., academicTitle=[null], email=info@MyDirect.de])
+[INFO ] 2022-08-17 18:59:58.642 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.642 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.642 [main] LoggingConsumer - flush()
+[INFO ] 2022-08-17 18:59:58.644 [main] LoggingConsumer - close()
+[INFO ] 2022-08-17 18:59:58.644 [main] LoggingConsumer - close()
+[INFO ] 2022-08-17 18:59:58.644 [main] LoggingConsumer - close()
+[INFO ] 2022-08-17 18:59:58.647 [main] LoggingConsumer - close()
+[INFO ] 2022-08-17 18:59:58.647 [main] LoggingConsumer - close()
+[INFO ] 2022-08-17 18:59:58.647 [main] LoggingConsumer - close()
+[INFO ] 2022-08-17 18:59:58.656 [main] TimedGeneratorStatement - Created 5 data sets from 'customer' setup in 806 ms (6/s)
+[INFO ] 2022-08-17 18:59:58.656 [main] TimedGeneratorStatement - Created 5 data sets from 'customer' setup in 806 ms (6/s)
+[INFO ] 2022-08-17 18:59:58.656 [main] TimedGeneratorStatement - Created 5 data sets from 'customer' setup in 806 ms (6/s)
+[INFO ] 2022-08-17 18:59:58.659 [main] DescriptorRunner - Created a total of 5 entities in 816 ms (~22,000 p.h.)
+[INFO ] 2022-08-17 18:59:58.659 [main] DescriptorRunner - Created a total of 5 entities in 816 ms (~22,000 p.h.)
+[INFO ] 2022-08-17 18:59:58.659 [main] DescriptorRunner - Created a total of 5 entities in 816 ms (~22,000 p.h.)
+[INFO ] 2022-08-17 18:59:58.663 [main] CONFIG - Max. committed heap size: 248 MB
+[INFO ] 2022-08-17 18:59:58.663 [main] CONFIG - Max. committed heap size: 248 MB
+[INFO ] 2022-08-17 18:59:58.663 [main] CONFIG - Max. committed heap size: 248 MB

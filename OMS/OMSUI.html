@@ -1,0 +1,380 @@
+<html>
+
+<head>
+    <title>Orders</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"
+        integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.js"
+        integrity="sha512-rCVQBDU9Ny0aKLo1/B1MqgRjWEMlCL3WJ0DD6mJeK6qMZqpN9JCRxPtMQWWR9XWCMFIqlSgT4uOdwpvxWTSejw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="container">
+    <h5 class="text-center bg-info text-white mt-3 p-1">Order Form</h5>
+    <div ng-app="mainApp" class="" ng-controller="orderController">
+        <!--   <div ng-if="responseMsg" class="bg-danger text-white p-1 text-center ">
+
+            {{responseMsg}}
+
+        </div> -->
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <form name="orderForm " novalidate class="container-fluid" style="font-size: 13px">
+                    <div class="form-row">
+                        <div class="form-group col-4">
+                            <label for="orderId">Order Id</label>
+                            <input name="orderId" type="text" ng-model="orderId" required
+                                class="form-control form-control-sm" id="orderId" aria-describedby="orderId"
+                                placeholder="Enter orderId" />
+                            <div style="color: red" ng-show="orderForm.orderId.$dirty && orderForm.orderId.$invalid">
+                                <span ng-show="orderForm.orderId.$error.required">Order Id is required.</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="customerName">Customer Name</label>
+                            <input name="customerName" type="text" ng-model="customerName" required
+                                class="form-control form-control-sm" id="customerName" aria-describedby="customerName"
+                                placeholder="Enter first name" />
+                            <div style="color: red"
+                                ng-show="orderForm.customerName.$dirty && orderForm.customerName.$invalid">
+                                <span ng-show="orderForm.customerName.$error.required">Customer Name is required.</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="address">Address</label>
+                            <input name="address" type="text" ng-model="address" class="form-control form-control-sm"
+                                id="address" aria-describedby="address" placeholder="Enter last name" />
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="productName">Product Name</label>
+                            <input name="productName" type="text" ng-model="productName"
+                                class="form-control form-control-sm" id="productName" aria-describedby="productName"
+                                placeholder="Enter last name" />
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="prodId">Product Id</label>
+                            <input type="prodId" class="form-control form-control-sm" required ng-model="prodId"
+                                id="prodId" aria-describedby="prodId" placeholder="Enter product id" />
+                            <div style="color: red" ng-show="orderForm.prodId.$dirty && orderForm.prodId.$invalid">
+                                <span ng-show="orderForm.prodId.$error.required">Product Id is required.</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="quantity">Quantity</label>
+                            <input type="quantity" class="form-control form-control-sm" required ng-model="quantity"
+                                id="quantity" aria-describedby="quantity" placeholder="Enter quantity" />
+                            <div style="color: red" ng-show="orderForm.quantity.$dirty && orderForm.quantity.$invalid">
+                                <span ng-show="orderForm.quantity.$error.required">Quantity is required.</span>
+                            </div>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="paymentType">Payment Type</label>
+                            <input type="paymentType" class="form-control form-control-sm" required
+                                ng-model="paymentType" id="paymentType" aria-describedby="paymentType"
+                                placeholder="Enter payment type" />
+                            <div style="color: red"
+                                ng-show="orderForm.paymentType.$dirty && orderForm.paymentType.$invalid">
+                                <span ng-show="orderForm.paymentType.$error.required">Payment is required.</span>
+                            </div>
+                        </div>
+                        <div class="col-4 mt-4 text-center">
+                            <button ng-click="reset()" class="btn btn-sm btn-danger">
+                                Reset
+                            </button>
+                            <button type="submit" class="btn btn-sm btn-primary ml-3" ng-disabled="orderForm.orderId.$dirty &&
+                      orderForm.orderId.$invalid || orderForm.customerName.$dirty &&
+                      orderForm.customerName.$invalid || orderForm.orderId.$dirty &&
+                      orderForm.orderId.$invalid" ng-click="submit()">
+                                Submit
+                            </button>
+                        </div>
+                        <div class="col-12">
+                            <span class="ml-3" ng-if="responseMsg">
+                                Status :
+                                <span class="font-weight-bold"> {{responseMsg}}</span>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h5>(OR)</h5>
+
+                <div class="mt-4">
+                    <label for="file" class="font-weight-bold">Upload CSV File.</label>
+                    <input type="file" class="form-control form-control-sm w-75" file-model="myFile" accept=".csv">
+                    <button class="btn btn-sm btn-primary mt-2" ng-click="uploadFile()">Upload and save</button>
+                </div>
+                <div class="ml-3 mt-3" ng-if="fileResponse">
+                    Status :<span class="font-weight-bold"> {{fileResponse}}</span>
+                    <br>
+                    <span> Total <span class="font-weight-bold"> {{total}} </span> Records</span>
+                    <br>
+                    <span> <span class="font-weight-bold"> {{savedCount}} </span> Records Saved</span>
+                    <br>
+                    <span ng-if="existedRecords.length > 0 "> <span
+                            class="font-weight-bold">{{existedRecords.length}}</span> Records Already Existed In
+                        Database </span>
+                </div>
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="mt-3">
+            <h5 class="text-center bg-info text-white p-1">Orders Data</h5>
+
+            <input class="mt-2" type="text" name="searchData" ng-model="searchData" id="searchData" />
+            <button type="submit" class="btn btn-primary btn-sm" ng-click="searchUserData()" style="margin-top: -5px;">
+                Search
+            </button>
+            <button class="btn btn-sm btn-primary float-right" ng-click="getOrdersCsv()">Download As CSV</button>
+            <table class="table table-bordered mt-2">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Order Id</th>
+                        <th>Customer Name</th>
+                        <th>Address</th>
+                        <th>Product Name</th>
+                        <th>Product Id</th>
+                        <th>Quantity</th>
+                        <th>Payment Type</th>
+                    </tr>
+                </thead>
+                <tr ng-repeat="order in orders">
+                    <td>{{order.id}}</td>
+                    <td>{{order.orderId}}</td>
+                    <td>{{order.customerName}}</td>
+                    <td>{{order.address}}</td>
+                    <td>{{order.productName}}</td>
+                    <td>{{order.prodId}}</td>
+                    <td>{{order.quantity}}</td>
+                    <td>{{order.paymentType}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+<script>
+    var mainApp = angular.module("mainApp", []);
+
+    mainApp.directive('fileModel', ['$parse', function ($parse) {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attrs) {
+                var model = $parse(attrs.fileModel);
+                var modelSetter = model.assign;
+
+                element.bind('change', function () {
+                    scope.$apply(function () {
+                        modelSetter(scope, element[0].files[0]);
+                    });
+                });
+            }
+        };
+    }]);
+    mainApp.service('fileUpload', ['$http', function ($https) {
+
+    }]);
+
+    mainApp.controller("orderController", ['$scope', '$http', function ($scope, $http) {
+        $scope.reset = function () {
+            $scope.orderId = "";
+            $scope.customerName = "";
+            $scope.address = "";
+            $scope.productName = "";
+            $scope.prodId = "";
+            $scope.quantity = "";
+            $scope.paymentType = "";
+        };
+        $scope.searchData = "";
+        $scope.orders = [];
+        $scope.order = {};
+        $scope.file = "";
+        $scope.responseMsg = "";
+        $scope.fileResponse = "";
+        $scope.existedRecords = [];
+        $scope.savedCount = 0;
+        $scope.total = 0;
+
+
+        /* Saving User Data */
+        $scope.submit = function () {
+            $scope.order.orderId = $scope.orderId;
+            $scope.order.customerName = $scope.customerName;
+            $scope.order.address = $scope.address;
+            $scope.order.productName = $scope.productName;
+            $scope.order.prodId = $scope.prodId;
+            $scope.order.quantity = $scope.quantity;
+            $scope.order.paymentType = $scope.paymentType;
+
+            var successCallback = function (data, status, headers, config) {
+                if (data.data == "success") {
+                    $scope.reset();
+                    getUsersData();
+                    $scope.responseMsg = "Order Saved Successfully";
+                } else {
+                    $scope.responseMsg = data.data;
+                }
+            };
+
+            var errorCallback = function (data, status, headers, config) {
+                $scope.responseMsg = "Failed";
+            };
+
+            $http({
+                method: "POST",
+                url: "http:localhost:8081/order/saveOrder",
+                data: angular.toJson($scope.order),
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "text/plain",
+                },
+            }).then(successCallback, errorCallback);
+        };
+
+        /* Search order Data */
+        $scope.searchUserData = function () {
+            var successCallback = function (data, status, headers, config) {
+                if (data.data) {
+                    $scope.orders = data.data;
+                }
+            };
+
+            var errorCallback = function (data, status, headers, config) {
+                console.log(data);
+            };
+
+            $http({
+                method: "GET",
+                url: "http:localhost:8081/order/searchOrders/" + $scope.searchData,
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+            }).then(successCallback, errorCallback);
+        };
+
+        /* Getting User Data */
+        function getUsersData() {
+            $http.get("http:localhost:8081/order/getOrdersList").then(
+                function (result) {
+                    /*  console.log("success: " , result.data); */
+                    $scope.orders = result.data;
+                },
+                function (err) {
+                    console.log("err", err);
+                }
+            );
+        }
+
+        getUsersData();
+
+        // save order by csv file
+
+        $scope.uploadFile = function () {
+            var file = $scope.myFile;
+            console.log('file is ');
+            console.dir(file);
+            var uploadUrl = "http:localhost:8081/order/saveOrderByCsvFile";
+            $scope.uploadFileToUrl(file, uploadUrl);
+            $scope.reset();
+            getUsersData();
+        };
+
+
+
+        $scope.uploadFileToUrl = function (file, uploadUrl) {
+            var fd = new FormData();
+            fd.append('file', file);
+
+            var successCallback = function (data, status, headers, config) {
+                if (data.data.message == "Success") {
+                    $scope.reset();
+                    $scope.fileResponse = "Succss";
+                    $scope.existedRecords = data.data.existed;
+                    $scope.savedCount = data.data.savedCount;
+                    $scope.total = data.data.total;
+                    getUsersData();
+                } else {
+                    $scope.fileResponse = data.data;
+                }
+            };
+
+            var errorCallback = function (data, status, headers, config) {
+                $scope.fileResponse = "Failed";
+            };
+
+            $http.post(uploadUrl, fd, {
+                transformRequest: angular.identity,
+                headers: { 'Content-Type': undefined }
+            }).then(successCallback, errorCallback);
+        };
+
+
+        $scope.getOrdersCsv = function () {
+            var successCallback = function (data, status, headers, config) {
+                if (data.data) {
+                    let csvContent = atob(data.data);
+                    console.log("===atob ", csvContent);
+                    var blob = new Blob([csvContent], { type: "data:text/csv;base64" });
+                    var url = window.URL.createObjectURL(blob);
+                    let dwldLink = document.createElement("a");
+                    let isSafariBrowser =
+                        navigator.userAgent.indexOf("Safari") != -1 &&
+                        navigator.userAgent.indexOf("Chrome") == -1;
+                    if (isSafariBrowser) {
+                        dwldLink.setAttribute("target", "_blank");
+                    }
+                    dwldLink.setAttribute("href", url);
+                    dwldLink.setAttribute("download", "orders.csv");
+                    dwldLink.style.visibility = "hidden";
+                    document.body.appendChild(dwldLink);
+                    dwldLink.click();
+                    document.body.removeChild(dwldLink);
+
+                }
+            };
+
+            var errorCallback = function (data, status, headers, config) {
+                console.log("=====>" + data);
+            };
+
+            $http({
+                method: "GET",
+                url: "http:localhost:8081/order/getOrdersCsv",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "text/plain",
+                },
+            }).then(successCallback, errorCallback);
+        };
+
+
+
+        /*   $scope.reset(); */
+    }]);
+</script>
+
+</html>

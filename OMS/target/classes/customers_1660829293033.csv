@@ -1,0 +1,6 @@
+customerId,first_name,last_name,birthDate,superuser,salutation,academicTitle,email
+18274,Patel,Arjun,04.12.1968,true,Mr.,,info@VQC.de
+18274,Chattopadhyay,Lila,26.05.2001,false,Mrs.,,info@Sriram-Chatterjee.de
+18274,Subramanium,Naresh,25.08.1983,false,Mr.,,info@PowerScape.de
+18274,Das,Rama,09.02.1975,true,Mr.,,info@Sharma-Bhatnagar.de
+18274,Gavde,Saroja,05.02.1967,false,Mrs.,,info@AutoCom.de
